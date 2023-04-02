@@ -65,6 +65,7 @@
               >Gulabi dekho</v-card-title
             >
           </div>
+          
           <v-img
             src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/f1812379024277.5cbcada09cedf.gif"
             alt="image"

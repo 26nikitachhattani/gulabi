@@ -17,23 +17,24 @@
       }"
     >
       <div class="mx-1">
-        <v-card class="px-auto text-center" height="300">
+        <v-card class="px-auto text-center pa-4" height="300">
           <v-img
             src="https://i.pinimg.com/originals/db/27/4f/db274fd162c3254bfa46dfe0b82f77e0.jpg"
             alt="image"
             class=""
             height="200"
+            content
           ></v-img>
         </v-card>
       </div>
 
       <div class="mx-1">
-        <v-card class="mx-3 text-center" height="300" justify-center>
+        <v-card class="mx-3 text-center pa-4" height="300" justify-center>
           <v-img
             src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/ed5a3179024277.5cbca8251c762.gif"
             alt="image"
             class=""
-            height="200"
+            content
           ></v-img>
         </v-card>
       </div>

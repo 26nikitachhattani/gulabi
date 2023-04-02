@@ -12,7 +12,7 @@
       <v-spacer></v-spacer>
       <v-icon color="white " class="90-rotate" large>mdi-cart-outline</v-icon>
     </v-toolbar>
-    <v-toolbar flat class="mt-0" height="80" style="padding: 0px 2px">
+    <v-toolbar flat class="mt-0" height="80" style="padding: 0px 2px; ">
       <v-tabs
         align-with-title
         elevation="0"
@@ -20,19 +20,19 @@
         next-icon="mdi-chevron-right-circle"
         prev-icon="mdi-chevron-left-circle"
         show-arrows
-        style="font-family: poppins;"
+        style="font-family: poppins; "
       >
-      <v-tab style="background-color: #d0daff">
+      <!-- <v-tab style="background-color: #d0daff; font-size: 20px">
         Makeup
         </v-tab>
-        <v-tab style="background-color: #d7d0ff">
-        Makeup
+        <v-tab style="background-color: #d7d0ff; font-size: 20px">
+        Accesories
         </v-tab>
         <v-tab style="background-color: #f0c8f1">
-        Makeup
+        Ethanic Wear
         </v-tab>
         <v-tab style="background-color: #f0d0d6">
-        Makeup
+        cosmetics
         </v-tab>
          <v-tab style="background-color: #ffec80">
         Makeup
@@ -47,11 +47,13 @@
         Makeup
         </v-tab>
         <v-tab style="background-color: #daeaf6">
+          <div><v-icon class="white--text">mdi-cookie</v-icon></div>
         Makeup
         </v-tab>
-        <v-tab style="background-color: #cce0aa">
+        <v-tab style="background-color: #cce0aa" to="/about">
+          <div><v-icon class="white--text">mdi-note</v-icon></div>
         Makeup
-        </v-tab>
+        </v-tab> -->
         <v-tab style="font-family: 'poppins'">
           <div>
             <v-avatar size="46px" class="maintool">
@@ -168,7 +170,7 @@
 
         <v-card-text class="white--text">
           Copyright 2022 - {{ new Date().getFullYear() }} <a class="white--text"
-            href="https://codepen.io/jettaz">Jettaz</a> | It is free for use
+            href="https://codepen.io/jettaz">AniKriya</a> | It is free for use
         </v-card-text>
       </v-card>
     </v-footer>
@@ -266,23 +268,30 @@ export default {
   }
 };
 </script>
+<style>
+.owl-theme .owl-nav {
+    display: none !important;
+    margin-top: 10px;
+    text-align: center;
+    -webkit-tap-highlight-color: transparent;
+}
+</style>
 <style scoped>
 @import url('https://fonts.googleapis.com/css2?family=Caveat&family=Gideon+Roman&family=Noto+Sans&display=swap');
 @import url("https://fonts.googleapis.com/css2?family=Comforter&family=Poppins");
 @import url("https://fonts.googleapis.com/css2?family=Comforter&family=Dancing+Script:wght@400;500;600;700&display=swap");
 * {
-  /* font-family: "Comforter", cursive; */
+  /* font-family: "Comforter"; */
   font-family: Caveat,sans-serif;
-  font-weight: 500;  /* font-family: 'poppins', cursive; */
-  /* font-family: "Pacifico", cursive; */
   font-weight: 500;
+  /* font-family: 'poppins', cursive; */
+  /* font-family: "Pacifico", cursive; */
   letter-spacing: 0px !important;
   text-transform: capitalize !important;
   /* color: linear-gradient(180deg, #7200cc 0%, #2a7ebc 100%); */
 }
 
 .maintool {
-  /* background: linear-gradient(to right, #7387e5, #89ff86); */
   background: linear-gradient(180deg, #7200cc 0%, #2a7ebc 100%);
   z-index: 9999;
 }
